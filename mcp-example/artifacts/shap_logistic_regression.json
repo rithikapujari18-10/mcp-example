@@ -1,0 +1,95 @@
+{
+  "model_name": "logistic_regression",
+  "explains": "predicted probability of malignant (positive SHAP = toward malignant)",
+  "base_value": 0.3254961012400624,
+  "global_top_features": [
+    {
+      "feature": "worst area",
+      "mean_abs_shap": 0.20793447305790233
+    },
+    {
+      "feature": "mean perimeter",
+      "mean_abs_shap": 0.1925530991549906
+    },
+    {
+      "feature": "mean area",
+      "mean_abs_shap": 0.14371651272270114
+    },
+    {
+      "feature": "worst perimeter",
+      "mean_abs_shap": 0.07778731571629106
+    },
+    {
+      "feature": "area error",
+      "mean_abs_shap": 0.0719934902363418
+    },
+    {
+      "feature": "worst texture",
+      "mean_abs_shap": 0.06892772032367292
+    },
+    {
+      "feature": "mean radius",
+      "mean_abs_shap": 0.0555212078677577
+    },
+    {
+      "feature": "texture error",
+      "mean_abs_shap": 0.013334249682326566
+    }
+  ],
+  "local_index": 10,
+  "local_case": {
+    "true_class": "benign",
+    "predicted_class": "benign",
+    "probability_malignant": 0.0013641282240396402
+  },
+  "local_top_contributions": [
+    {
+      "feature": "worst area",
+      "feature_value": 585.4,
+      "shap_value": -0.17861005860371237,
+      "pushes_toward": "benign"
+    },
+    {
+      "feature": "worst texture",
+      "feature_value": 19.93,
+      "shap_value": -0.08933483608126415,
+      "pushes_toward": "benign"
+    },
+    {
+      "feature": "mean perimeter",
+      "feature_value": 83.14,
+      "shap_value": -0.0846471143869984,
+      "pushes_toward": "benign"
+    },
+    {
+      "feature": "mean area",
+      "feature_value": 513.7,
+      "shap_value": 0.07987352217049823,
+      "pushes_toward": "malignant"
+    },
+    {
+      "feature": "worst perimeter",
+      "feature_value": 88.81,
+      "shap_value": -0.05737552861520334,
+      "pushes_toward": "benign"
+    },
+    {
+      "feature": "area error",
+      "feature_value": 17.67,
+      "shap_value": -0.04874875549639676,
+      "pushes_toward": "benign"
+    },
+    {
+      "feature": "mean radius",
+      "feature_value": 12.95,
+      "shap_value": 0.03252504154597054,
+      "pushes_toward": "malignant"
+    },
+    {
+      "feature": "texture error",
+      "feature_value": 0.7636,
+      "shap_value": 0.012031803392132718,
+      "pushes_toward": "malignant"
+    }
+  ]
+}
